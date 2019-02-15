@@ -11,7 +11,7 @@ describe("#type", function () {
     afterEach(function () {
         console.log.restore();
     });
-    var assignment = require('../day-3/type');
+    var assignment = require('../js/type');
     describe("isArray", function () {
         it('should return true if given Array, otherwise false', function() {
             expect(assignment.isArray([])).to.be.true;

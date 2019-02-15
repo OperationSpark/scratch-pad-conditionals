@@ -11,9 +11,9 @@ describe("#fizz-buzz", function () {
     afterEach(function () {
         console.log.restore();
     });
-    var homework = require('../day-2/homework/fizz-buzz');
+    var assignment = require('../js/fizz-buzz');
     it('should print to stdin the correct results of the fizz buzz exercise', function () {
-        homework.fizzBuzz();
+        assignment.fizzBuzz();
         expect(_.flatten(console.log.args)).to.eql(fizzBuzzConsoleCalls);
     });
 });

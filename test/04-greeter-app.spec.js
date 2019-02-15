@@ -11,7 +11,7 @@ describe("#greeter-app", function () {
     afterEach(function () {
         console.log.restore();
     });
-    var assignment = require('../day-2/greeter-app');
+    var assignment = require('../js/greeter-app');
     it('should print Good Morning! if hour is between 0 and 11', function () {
         assignment.greeter(0);
         expect(console.log.firstCall.calledWith('Good Morning!')).to.be.true;
