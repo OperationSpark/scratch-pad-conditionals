@@ -38,7 +38,6 @@ function greeter(hour) {
     
     
     
-    
     // YOUR CODE ABOVE HERE //
 }
 
