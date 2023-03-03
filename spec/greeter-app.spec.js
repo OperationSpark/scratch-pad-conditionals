@@ -36,10 +36,10 @@ describe("#greeter-app", function () {
         console.log.reset();
         
         greeter(22);
-        expect(console.log.firstCall.calledWith('Good Night!'), 'should print Good Night! if hour is between 22 and 23').to.be.true;
-        greeter(23);
-        expect(console.log.secondCall.calledWith('Good Night!'), 'should print Good Night! if hour is between 22 and 23').to.be.true;
+        expect(console.log.firstCall.calledWith('Good Night!'), 'should print Good Night! if hour is between 22 and 24').to.be.true;
+        greeter(24);
+        expect(console.log.secondCall.calledWith('Good Night!'), 'should print Good Night! if hour is between 22 and 24').to.be.true;
         greeter(0);
-        expect(console.log.thirdCall.calledWith('Good Night!'), 'should print Good Night! if hour is between 22 and 23').to.be.false;
+        expect(console.log.thirdCall.calledWith('Good Night!'), 'should print Good Night! if hour is between 22 and 24').to.be.false;
     });
 });
